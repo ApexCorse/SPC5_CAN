@@ -2,3 +2,4 @@ components/
 build/
 .dep/
 .settings/
+vera/

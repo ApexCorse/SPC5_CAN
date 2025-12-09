@@ -15,9 +15,15 @@
    automatically.*/
 #include "components.h"
 #include "can_lld_cfg.h"
+#include "vera/vera.h"
+#include "vera/vera_autodevkit.h"
 
 void mcanconf_receive_callback(uint32_t msgbuf, CANRxFrame crfp)  {
-
+	vera_decoded_signal_t signals[8];
+	vera_decoding_result_t res = {
+			.decoded_signals = &signals
+	};
+	vera_err_t err = vera_decode_autodevkit_rx_frame(&crfp, &res);
 }
 
 /*
@@ -36,20 +42,17 @@ int main(void) {
   can_lld_start(&CAND1, &can_config_mcanconf);
 
   CANTxFrame tx;
-  tx.OPERATION = CAN_OP_NORMAL;
-  tx.TYPE = CAN_ID_STD;
-  tx.ID = 0x0001;
-  tx.DLC = 8U;
-  tx.data32[0] = 0x0032;
-  uint32_t counter = 0;
+  uint64_t counter = 1ULL;
+
   
   /* Application main loop.*/
   for ( ; ; ) {
-	  tx.data32[1] = ++counter;
+	  vera_err_t err = vera_encode_autodevkit_EMDL_Status(&tx, counter++, 0ULL, 0ULL, 0ULL, 0ULL);
+	  if (err != vera_err_ok) break;
+
 	  uint32_t result = can_lld_transmit(&CAND1, CAN_ANY_TXBUFFER, &tx);
 	  osalThreadDelayMilliseconds(100);
 	  if (result != CAN_MSG_OK) break;
-	  if (counter > 10) break;
   }
 
   can_lld_stop(&CAND1);

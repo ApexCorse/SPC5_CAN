@@ -2730,7 +2730,7 @@
                         <value>Standard</value>
                       </filter_type>
                       <filter_value>
-                        <value>0x1</value>
+                        <value>0x430</value>
                       </filter_value>
                       <rx_buffer_number>
                         <value>1</value>

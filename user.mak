@@ -1,5 +1,5 @@
 # List of all user C source files
-U_C_SRC     = ./main.c
+U_C_SRC     = ./main.c ./vera/vera.c ./vera/vera_autodevkit.c
 
 # List of all user C++ source files
 U_CPP_SRC   =
@@ -14,7 +14,7 @@ UDEFS       =
 UADEFS      =
 
 # List all user directories here
-UINCDIR     =
+UINCDIR     = ./vera
 
 # List the user directory to look for the libraries here
 ULIBDIR     =
