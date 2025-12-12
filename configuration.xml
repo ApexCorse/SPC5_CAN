@@ -147,7 +147,317 @@
           </board_name>
         </identification>
         <i_o_settings>
-          <pins_list />
+          <pins_list>
+            <pin_settings>
+              <pin_identification>
+                <identifier>
+                  <value>PIN_TX_2_0</value>
+                </identifier>
+                <port index="0">
+                  <value>PORT_A</value>
+                </port>
+                <bit index="10">
+                  <value>10</value>
+                </bit>
+                <metadatas>
+                  <metadata name="active" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                    <value>NONE</value>
+                  </metadata>
+                </metadatas>
+              </pin_identification>
+              <settings>
+                <pin_mode index="2">
+                  <value>MODE_OUTPUT</value>
+                  <metadatas>
+                    <metadata name="direction" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>O</value>
+                    </metadata>
+                    <metadata name="functionRef" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>TX_2_0</value>
+                    </metadata>
+                  </metadatas>
+                </pin_mode>
+                <latched_state index="0">
+                  <value>LOW</value>
+                </latched_state>
+                <mscr_io_settings>
+                  <mscr_index>
+                    <value>10</value>
+                  </mscr_index>
+                  <sss>
+                    <value>3</value>
+                  </sss>
+                  <control_bits>
+                    <oerc index="0">
+                      <value>Weak Drive</value>
+                    </oerc>
+                    <odc index="2">
+                      <value>Push-Pull</value>
+                    </odc>
+                    <smc>
+                      <value>true</value>
+                    </smc>
+                    <ils disabled="true" index="0">
+                      <value>Automotive</value>
+                    </ils>
+                    <ibe disabled="true">
+                      <value>true</value>
+                    </ibe>
+                    <wpde disabled="true">
+                      <value>false</value>
+                    </wpde>
+                    <wpue disabled="true">
+                      <value>false</value>
+                    </wpue>
+                    <inv>
+                      <value>false</value>
+                    </inv>
+                  </control_bits>
+                </mscr_io_settings>
+                <mscr_mux_settings disabled="true">
+                  <mscr_index disabled="true">
+                    <value>512</value>
+                  </mscr_index>
+                  <sss disabled="true">
+                    <value>0</value>
+                  </sss>
+                </mscr_mux_settings>
+              </settings>
+            </pin_settings>
+            <pin_settings>
+              <pin_identification>
+                <identifier>
+                  <value>PIN_RX_2_0</value>
+                </identifier>
+                <port index="0">
+                  <value>PORT_A</value>
+                </port>
+                <bit index="11">
+                  <value>11</value>
+                </bit>
+                <metadatas>
+                  <metadata name="active" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                    <value>NONE</value>
+                  </metadata>
+                </metadatas>
+              </pin_identification>
+              <settings>
+                <pin_mode index="3">
+                  <value>MODE_INPUT</value>
+                  <metadatas>
+                    <metadata name="direction" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>I</value>
+                    </metadata>
+                    <metadata name="functionRef" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>RX_2_0</value>
+                    </metadata>
+                  </metadatas>
+                </pin_mode>
+                <latched_state disabled="true" index="0">
+                  <value>LOW</value>
+                </latched_state>
+                <mscr_io_settings>
+                  <mscr_index>
+                    <value>11</value>
+                  </mscr_index>
+                  <sss disabled="true">
+                    <value>0</value>
+                  </sss>
+                  <control_bits>
+                    <oerc disabled="true" index="0">
+                      <value>Weak Drive</value>
+                    </oerc>
+                    <odc disabled="true" index="0">
+                      <value>Disabled</value>
+                    </odc>
+                    <smc disabled="true">
+                      <value>true</value>
+                    </smc>
+                    <ils index="0">
+                      <value>Automotive</value>
+                    </ils>
+                    <ibe>
+                      <value>true</value>
+                    </ibe>
+                    <wpde>
+                      <value>false</value>
+                    </wpde>
+                    <wpue>
+                      <value>true</value>
+                    </wpue>
+                    <inv disabled="true">
+                      <value>false</value>
+                    </inv>
+                  </control_bits>
+                </mscr_io_settings>
+                <mscr_mux_settings>
+                  <mscr_index>
+                    <value>759</value>
+                  </mscr_index>
+                  <sss>
+                    <value>2</value>
+                  </sss>
+                </mscr_mux_settings>
+              </settings>
+            </pin_settings>
+            <pin_settings>
+              <pin_identification>
+                <identifier>
+                  <value>PIN_TX_0_0</value>
+                </identifier>
+                <port index="3">
+                  <value>PORT_D</value>
+                </port>
+                <bit index="14">
+                  <value>14</value>
+                </bit>
+                <metadatas>
+                  <metadata name="active" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                    <value>NONE</value>
+                  </metadata>
+                </metadatas>
+              </pin_identification>
+              <settings>
+                <pin_mode index="2">
+                  <value>MODE_OUTPUT</value>
+                  <metadatas>
+                    <metadata name="direction" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>O</value>
+                    </metadata>
+                    <metadata name="functionRef" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>TX_0_0</value>
+                    </metadata>
+                  </metadatas>
+                </pin_mode>
+                <latched_state index="0">
+                  <value>LOW</value>
+                </latched_state>
+                <mscr_io_settings>
+                  <mscr_index>
+                    <value>62</value>
+                  </mscr_index>
+                  <sss>
+                    <value>1</value>
+                  </sss>
+                  <control_bits>
+                    <oerc index="0">
+                      <value>Weak Drive</value>
+                    </oerc>
+                    <odc index="2">
+                      <value>Push-Pull</value>
+                    </odc>
+                    <smc>
+                      <value>true</value>
+                    </smc>
+                    <ils disabled="true" index="0">
+                      <value>Automotive</value>
+                    </ils>
+                    <ibe disabled="true">
+                      <value>true</value>
+                    </ibe>
+                    <wpde disabled="true">
+                      <value>false</value>
+                    </wpde>
+                    <wpue disabled="true">
+                      <value>false</value>
+                    </wpue>
+                    <inv>
+                      <value>false</value>
+                    </inv>
+                  </control_bits>
+                </mscr_io_settings>
+                <mscr_mux_settings disabled="true">
+                  <mscr_index disabled="true">
+                    <value>512</value>
+                  </mscr_index>
+                  <sss disabled="true">
+                    <value>0</value>
+                  </sss>
+                </mscr_mux_settings>
+              </settings>
+            </pin_settings>
+            <pin_settings>
+              <pin_identification>
+                <identifier>
+                  <value>PIN_RX_0_0</value>
+                </identifier>
+                <port index="3">
+                  <value>PORT_D</value>
+                </port>
+                <bit index="15">
+                  <value>15</value>
+                </bit>
+                <metadatas>
+                  <metadata name="active" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                    <value>NONE</value>
+                  </metadata>
+                </metadatas>
+              </pin_identification>
+              <settings>
+                <pin_mode index="3">
+                  <value>MODE_INPUT</value>
+                  <metadatas>
+                    <metadata name="direction" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>I</value>
+                    </metadata>
+                    <metadata name="functionRef" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+                      <value>RX_0_0</value>
+                    </metadata>
+                  </metadatas>
+                </pin_mode>
+                <latched_state disabled="true" index="0">
+                  <value>LOW</value>
+                </latched_state>
+                <mscr_io_settings>
+                  <mscr_index>
+                    <value>63</value>
+                  </mscr_index>
+                  <sss disabled="true">
+                    <value>0</value>
+                  </sss>
+                  <control_bits>
+                    <oerc disabled="true" index="0">
+                      <value>Weak Drive</value>
+                    </oerc>
+                    <odc disabled="true" index="0">
+                      <value>Disabled</value>
+                    </odc>
+                    <smc disabled="true">
+                      <value>true</value>
+                    </smc>
+                    <ils index="0">
+                      <value>Automotive</value>
+                    </ils>
+                    <ibe>
+                      <value>true</value>
+                    </ibe>
+                    <wpde>
+                      <value>false</value>
+                    </wpde>
+                    <wpue>
+                      <value>true</value>
+                    </wpue>
+                    <inv disabled="true">
+                      <value>false</value>
+                    </inv>
+                  </control_bits>
+                </mscr_io_settings>
+                <mscr_mux_settings>
+                  <mscr_index>
+                    <value>757</value>
+                  </mscr_index>
+                  <sss>
+                    <value>2</value>
+                  </sss>
+                </mscr_mux_settings>
+              </settings>
+            </pin_settings>
+          </pins_list>
+          <metadatas>
+            <metadata name="refID" class="com.st.tools.spc5.extensions.GenericMetadataHandler" source="com.st.tools.spc5.wizard.pinmap">
+              <value>SPC58EC80E5</value>
+            </metadata>
+          </metadatas>
         </i_o_settings>
         <special_mux_settings>
           <input_multiplexers />
@@ -2575,9 +2885,9 @@
             </mcan_1>
             <mcan_2>
               <mcan_2>
-                <value>false</value>
+                <value>true</value>
               </mcan_2>
-              <shared_ram_size disabled="true">
+              <shared_ram_size>
                 <value>3968</value>
               </shared_ram_size>
             </mcan_2>
@@ -2590,7 +2900,7 @@
               </shared_ram_size>
             </mcan_3>
             <total_memory_used disabled="true">
-              <value>3968</value>
+              <value>7936</value>
             </total_memory_used>
             <total_memory_available disabled="true">
               <value>15872</value>
@@ -2643,8 +2953,8 @@
                   <value>mcanconf</value>
                 </symbolic_name>
                 <general_configuration>
-                  <loopback index="1">
-                    <value>Internal_Loopback</value>
+                  <loopback index="0">
+                    <value>No_Loopback</value>
                   </loopback>
                   <endianness index="0">
                     <value>Little Endian</value>
@@ -2737,6 +3047,177 @@
                       </rx_buffer_number>
                     </filter>
                   </rx_buffer_filters>
+                </rx_buffer_configuration>
+                <fifo_0_configuration>
+                  <interrupt_line index="0">
+                    <value>DISABLED</value>
+                  </interrupt_line>
+                  <number_of_fifo_buffers index="0">
+                    <value>0</value>
+                  </number_of_fifo_buffers>
+                  <new_message_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </new_message_interrupt>
+                  <new_message_callback disabled="true">
+                    <value />
+                  </new_message_callback>
+                  <watermark_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </watermark_interrupt>
+                  <watermark_reached_callback disabled="true">
+                    <value />
+                  </watermark_reached_callback>
+                  <fifo_full_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </fifo_full_interrupt>
+                  <fifo_full_callback disabled="true">
+                    <value />
+                  </fifo_full_callback>
+                  <fifo_message_lost_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </fifo_message_lost_interrupt>
+                  <fifo_message_lost_callback disabled="true">
+                    <value />
+                  </fifo_message_lost_callback>
+                  <fifo_buffer_filters />
+                </fifo_0_configuration>
+                <fifo_1_configuration>
+                  <interrupt_line index="0">
+                    <value>DISABLED</value>
+                  </interrupt_line>
+                  <number_of_fifo_buffers index="0">
+                    <value>0</value>
+                  </number_of_fifo_buffers>
+                  <new_message_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </new_message_interrupt>
+                  <new_message_callback disabled="true">
+                    <value />
+                  </new_message_callback>
+                  <watermark_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </watermark_interrupt>
+                  <watermark_reached_callback disabled="true">
+                    <value />
+                  </watermark_reached_callback>
+                  <fifo_full_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </fifo_full_interrupt>
+                  <fifo_full_callback disabled="true">
+                    <value />
+                  </fifo_full_callback>
+                  <fifo_message_lost_interrupt disabled="true" index="0">
+                    <value>DISABLED</value>
+                  </fifo_message_lost_interrupt>
+                  <fifo_message_lost_callback disabled="true">
+                    <value />
+                  </fifo_message_lost_callback>
+                  <fifo_buffer_filters />
+                </fifo_1_configuration>
+                <tx_configuration>
+                  <tx_mode index="0">
+                    <value>DEDICATED</value>
+                  </tx_mode>
+                  <number_of_tx_buffers index="16">
+                    <value>16</value>
+                  </number_of_tx_buffers>
+                  <number_of_fifo_or_queue_tx_buffers disabled="true" index="8">
+                    <value>8</value>
+                  </number_of_fifo_or_queue_tx_buffers>
+                </tx_configuration>
+                <error_management>
+                  <error_callback>
+                    <value />
+                  </error_callback>
+                </error_management>
+              </can_configuration_settings>
+              <can_configuration_settings>
+                <symbolic_name>
+                  <value>mcanconf1</value>
+                </symbolic_name>
+                <general_configuration>
+                  <loopback index="0">
+                    <value>No_Loopback</value>
+                  </loopback>
+                  <endianness index="0">
+                    <value>Little Endian</value>
+                  </endianness>
+                </general_configuration>
+                <timings>
+                  <clock_prescaler>
+                    <value>1</value>
+                  </clock_prescaler>
+                  <nsjw>
+                    <value>3</value>
+                  </nsjw>
+                  <ntseg1>
+                    <value>10</value>
+                  </ntseg1>
+                  <ntseg2>
+                    <value>3</value>
+                  </ntseg2>
+                  <can_subsytem_0_protocol_clock disabled="true">
+                    <value>8000000</value>
+                  </can_subsytem_0_protocol_clock>
+                  <can_subsytem_1_protocol_clock disabled="true">
+                    <value>8000000</value>
+                  </can_subsytem_1_protocol_clock>
+                  <can_subsytem_0_calculated_bit_rate disabled="true">
+                    <value>500000</value>
+                  </can_subsytem_0_calculated_bit_rate>
+                  <can_subsytem_1_calculated_bit_rate disabled="true">
+                    <value>500000</value>
+                  </can_subsytem_1_calculated_bit_rate>
+                </timings>
+                <canfd_operation>
+                  <enable_canfd>
+                    <value>false</value>
+                  </enable_canfd>
+                  <bit_rate_switching disabled="true">
+                    <value>false</value>
+                  </bit_rate_switching>
+                  <clock_prescaler disabled="true">
+                    <value>1</value>
+                  </clock_prescaler>
+                  <dsjw disabled="true">
+                    <value>1</value>
+                  </dsjw>
+                  <dtseg1 disabled="true">
+                    <value>1</value>
+                  </dtseg1>
+                  <dtseg2 disabled="true">
+                    <value>0</value>
+                  </dtseg2>
+                  <transceiver_delay_compensation disabled="true">
+                    <value>false</value>
+                  </transceiver_delay_compensation>
+                  <tdc_value disabled="true">
+                    <value>0</value>
+                  </tdc_value>
+                  <tdc_offset disabled="true">
+                    <value>0</value>
+                  </tdc_offset>
+                  <tdc_filter_window_length disabled="true">
+                    <value>0</value>
+                  </tdc_filter_window_length>
+                  <can_subsytem_0_canfd_bit_rate disabled="true">
+                    <value>2000000</value>
+                  </can_subsytem_0_canfd_bit_rate>
+                  <can_subsytem_1_canfd_bit_rate disabled="true">
+                    <value>2000000</value>
+                  </can_subsytem_1_canfd_bit_rate>
+                </canfd_operation>
+                <rx_buffer_configuration>
+                  <interrupt index="1">
+                    <value>LINE0</value>
+                  </interrupt>
+                  <callback>
+                    <value />
+                  </callback>
+                  <number_of_rx_buffers index="32">
+                    <value>32</value>
+                  </number_of_rx_buffers>
+                  <rx_buffer_filters />
                 </rx_buffer_configuration>
                 <fifo_0_configuration>
                   <interrupt_line index="0">

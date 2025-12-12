@@ -40,6 +40,7 @@ int main(void) {
 
   can_lld_init();
   can_lld_start(&CAND1, &can_config_mcanconf);
+  can_lld_start(&CAND3, &can_config_mcanconf1);
 
   CANTxFrame tx;
   uint64_t counter = 1ULL;
@@ -50,10 +51,11 @@ int main(void) {
 	  vera_err_t err = vera_encode_autodevkit_EMDL_Status(&tx, counter++, 0ULL, 0ULL, 0ULL, 0ULL);
 	  if (err != vera_err_ok) break;
 
-	  uint32_t result = can_lld_transmit(&CAND1, CAN_ANY_TXBUFFER, &tx);
+	  uint32_t result = can_lld_transmit(&CAND3, CAN_ANY_TXBUFFER, &tx);
 	  osalThreadDelayMilliseconds(100);
 	  if (result != CAN_MSG_OK) break;
   }
 
   can_lld_stop(&CAND1);
+  can_lld_stop(&CAND3);
 }
